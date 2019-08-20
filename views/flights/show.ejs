@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+
+<section id="show-page">
+  <div>Departs: </div>
+  <div><%= flight.departs %></div>
+  <div>Arrives: </div>
+  <div><%= flight.destinations.arrival %></div>
+  <div>Destinations: </div>
+  <div><%= flight.destinations %></div>
+</section>
+
+<!-- <form id="add-destination" action="/flights/<%= flights._id%>" method="POST">
+  <select name="flightId">
+    <%- performers.map(p => 
+      `<option value="${p._id}">${p.name}</option>`
+    ).join('') %>
+  </select>
+  <button type="submit">Add Destination</button>
+</form> -->
+
+<%- include('../partials/footer') %>
